@@ -1,0 +1,12 @@
+{
+    "name": "iom/rafitra",
+    "description": "this is a package laravel to use for components structures projects",
+    "authors": [
+        {
+            "name": "i0m Codes",
+            "email": "i0m.code@outlook.fr"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {}
+}
