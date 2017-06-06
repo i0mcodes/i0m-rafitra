@@ -6,5 +6,7 @@
         "psr-4": {
             "Iom\\Rafitra\\": "src/"
         }
-    }
+    },
+  "minimum-stability": "dev",
+  "prefer-stable" : true
 }

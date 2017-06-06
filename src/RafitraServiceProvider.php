@@ -15,7 +15,6 @@ class RafitraServiceProvider extends ServiceProvider
     public function boot()
     {
         $this->loadConfig();
-        include __DIR__.'/routes.php';
         parent::boot();
     }
 
