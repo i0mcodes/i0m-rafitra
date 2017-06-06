@@ -1,5 +1,10 @@
 {
     "name": "iom/rafitra",
     "description": "this is a package laravel to use for components structures projects",
-    "require": {}
+    "require": {},
+    "autoload": {
+        "psr-4": {
+            "Iom\\Rafitra\\": "src/"
+        }
+    },
 }
