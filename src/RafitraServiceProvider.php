@@ -14,6 +14,10 @@ class RafitraServiceProvider extends ServiceProvider
      */
     public function boot()
     {
+        $this->publishes([
+            __DIR__.'/../config/rafitra.php' => config_path('rafitra.php')
+        ], 'config');
+        
         $this->loadConfig();
         parent::boot();
     }
@@ -68,7 +72,7 @@ class RafitraServiceProvider extends ServiceProvider
             /* parcourir tous les modules dans les namespaces donnée dans le fichier config */
             foreach ($partComponent as $componentRoot)
             {
-                $component = substr($componentRoot, strrpos($componentRoot, '/') + 1);
+                $component = substr($componentRoot, strrpos($componentRoot, DIRECTORY_SEPARATOR) + 1);
 
                 /* recuperer le namespace des modules existants */
                 $namespace = sprintf(
@@ -105,4 +109,5 @@ class RafitraServiceProvider extends ServiceProvider
             }
         }
     }
+
 }

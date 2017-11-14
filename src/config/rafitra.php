@@ -2,7 +2,7 @@
 return [
     'namespaces' => [
         'Components' => base_path() . DIRECTORY_SEPARATOR . 'Components',
-        'Parts' => base_path() . DIRECTORY_SEPARATOR . 'parts',
+        'Api' => base_path() . DIRECTORY_SEPARATOR . 'api',
     ],
     'protection_middleware' => [
         'auth:api'
